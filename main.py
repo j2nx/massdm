@@ -4,7 +4,7 @@ sent = set()
 
 @client.event
 async def on_ready():
-    print(f'Logged in as {client.user})
+    print(f'Logged in as {client.user}')
     
     for guild in client.guilds:
         for member in guild.members:
