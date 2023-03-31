@@ -15,7 +15,7 @@ async def on_ready():
                     await member.dm_channel.send(f'mass dmed message {member.mention}')
                     sent.add(member.id)
                 except discord.Forbidden:
-                    print(f"unable to dm {member.name}")
+                    print(f"unable to mass dm {member.name}")
     
 
 
@@ -25,7 +25,7 @@ async def on_member_join(member):
         await member.create_dm()
         await member.dm_channel.send(f'join dm message {member.mention}')
     except:
-        print(f"unable to dm {member.name}")
+        print(f"unable to dm on {member.name} on join")
 
 @client.event
 async def on_member_remove(member):
@@ -33,7 +33,7 @@ async def on_member_remove(member):
         await member.create_dm()
         await member.dm_channel.send(f'leave dm message {member.mention}')
     except:
-        print(f"unable to dm {member.name}")
+        print(f"unable to dm {member.name} on join")
 
 
 
