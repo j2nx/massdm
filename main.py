@@ -5,7 +5,7 @@ sent = set()
 @client.event
 async def on_ready():
     print(f'Logged in as {client.user}')
-    await client.change_presence(activity=discord.Streaming(name="github.com/7lnx", url="https://www.youtube.com/watch?v=JcelF-4gC_k"))
+    await client.change_presence(activity=discord.Streaming(name="github.com/j2nx", url="https://www.youtube.com/watch?v=JcelF-4gC_k"))
     
     for guild in client.guilds:
         for member in guild.members:
